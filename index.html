@@ -20,11 +20,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+
+
+
 </head>
 
 <body>
            
+
     
+
+<script src="./script.js"></script>
+
+
     <!--- Main area   --->
 
 <main class="main ">
@@ -43,36 +51,35 @@
 
                <!---Remaing form area -->
 
-      <form method="post"  onsubmit="main();" >
+      <form  >
         
 <p>Put Your Birth Date </p>
 
-<div class="formoptions">
 
 <select name="months"  id="mainMonths" >
     <option value="Enter Your Birth Month" selected="selected"  disabled>Enter Your Birth Month</option>
     <option value="January"  >January</option>
-    <option value="January" >February</option>
-    <option value="January" >March</option>
-    <option value="January" >April</option>
-    <option value="January" >May</option>
-    <option value="January" >June</option>
-    <option value="January" >July</option>
-    <option value="January" >August</option>
-    <option value="January" >September</option>
-    <option value="January" >October</option>
-    <option value="January" >November</option>
-    <option value="January" >December</option>
+    <option value="February" >February</option>
+    <option value="March" >March</option>
+    <option value="April" >April</option>
+    <option value="May" >May</option>
+    <option value="Jun" >Jun</option>
+    <option value="July" >July</option>
+    <option value="August" >August</option>
+    <option value="September" >September</option>
+    <option value="October" >October</option>
+    <option value="November" >November</option>
+    <option value="December" >December</option>
 </select>
 
 
 <select name="Dates" id="mainDates">
     <option value="Enter Your Birth Date" selected="selected" disabled>Enter Your Birth Date</option>
-    <option value=" 5" >1</option>
-    <option value="1" >2</option>
-    <option value="2" >3</option>
-    <option value="3" >4</option>
-    <option value="4" >5</option>
+    <option value=" 1" >1</option>
+    <option value="2" >2</option>
+    <option value="3" >3</option>
+    <option value="4" >4</option>
+    <option value="5" >5</option>
     <option value="6" >6</option>
     <option value="7" >7</option>
     <option value="8" >8</option>
@@ -101,17 +108,18 @@
     <option value="31" >31</option>
     
 </select>
-</div>
-
 <br/>
-</form>
+<br/>
+ <!-- onclick="bilal(); " --> 
 
-<button type="button" id="Calculate button"  onclick="bilal(); " >Calculate</button>
+<button type="submit" id="Calculate button" onclick="bilal();return false;" >Calculate</button>
+
+</form> 
 
 <br/> 
 
            <!---Result area  -->
-
+<p id="test" style="width: 50px; height:50px ;"></p>
 <div class="results" id="blockNone" >
 
 <p>Remaing Months : </p>
@@ -136,7 +144,6 @@
 
 <!-- JAvascript link   --->
 
-<script src="./script.js"></script>
 
 
     

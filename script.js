@@ -1,29 +1,45 @@
-function bilal(){
-    document.getElementById(`blockNone`).style.display="block";
-}
 
-function main() {
-    let value1 = document.querySelector(`#mainMonths`).value
-  //   let currentFullDate = new Date()
-  //   let currentMonth = currentFullDate.getMonth()
-  //  let NewMonth=""
-  // NewMonth=Number(NewMonth)
-  //   if (value1 === 'January') {
+   function bilal(){
 
-  //       NewMonth = 0
-  //   }
-  //   let months = NewMonth - currentMonth
+   let userMonth=document.querySelector(`#mainMonths`).value    
+userMonth=Number(userMonth);
 
-value1=Number(value1)
-    let returnValue = "";
-      if (value1 === January) {
-      returnValue = "3";
-    }
-    document.querySelector(`#result1`).innerHTML = months;
-  }
- 
+//   Current Time of device
 
+let currentTime=new Date();
+
+//   get current Month from current time of device
+let currentMonth=currentTime.getMonth();
+
+let month=userMonth - (currentMonth+1);
+
+
+if(month< 0){
+      month=month+12
+  }else{
+      month=month
+  };
+  
+  
+  let addingMonths= `Months`;
+  addingMonths=Number(addingMonths)
+  
+  if(month===1){
+      addingMonths=`Month`;
+  }else{
+      addingMonths= `Months`;
+  };
+  
+  let combine= `${month} ${addingMonths}`;
+  console.log(combine);
+  // print the answer
+  
+  document.querySelector(`#result1`).innerHTML=combine;
     
+  document.querySelector(`#blockNone`).style.display="block";
+
+
+   }
 
 
 
@@ -37,10 +53,8 @@ value1=Number(value1)
 
 
 
-                    //  when click on button (result section should display block)
-        
-           //  for timer how many second later should (result section display none)
        
 // setTimeout(function()  {
 //     document.getElementById('blockNone').style.display = 'none';
 // }, 3000); // 3000 milliseconds = 3 seconds
+

@@ -11,50 +11,6 @@ body {
 }
 
       
-
-   /*  Navbar 
- .navbar{
-        background-color: rgb(5, 5, 180);
-      max-width: 100%;
-        height: 120px;
-        position: sticky;
- }
-
- .navbar h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-font-size: 2.2rem;
-color: rgb(255, 255, 255);
-text-shadow: 0 0 50px black;
- }
-
- @media all and (max-width:604px) {
-    .navbar h1{
-        font-size: 1.8rem;
-    }
- }
- @media all and (max-width:502px) {
-    .navbar h1{
-        font-size: 1.5rem;
-    }
- }
- 
- @media all and (max-width:424px) {
-    .navbar h1{
-        font-size: 1.3rem;
-        padding-top: 40px;
-    }
- }
- @media all and (max-width:358px) {
-    .navbar h1{
-        font-size: 1rem;
-    }
- }
- */
-
-
        /*  Main area */
 
 
@@ -142,6 +98,7 @@ button#Calculate\ button{
     width: 15em;
     background-color: rgb(187, 182, 182); 
     cursor: pointer;
+    margin-left: 111px;
 }
 
                  /* REsults area */
@@ -206,7 +163,10 @@ form div.formoptions{
 #mainDates{
     width: 100%;
 }  
-
+button#Calculate\ button{
+    position: relative;
+    right: 45px;
+}
 }
 
             /* For orientation */
