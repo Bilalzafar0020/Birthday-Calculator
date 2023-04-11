@@ -30,11 +30,12 @@ if(month< 0){
       addingMonths= `Months`;
   };
   
-  let combine= `${month} ${addingMonths}`;
-  console.log(combine);
+  let combine1= month + "" +  addingMonths;
+  combine1=Number(combine1)
+  console.log(combine1);
   // print the answer
   
-  document.querySelector(`#result1`).innerHTML=combine;
+  document.querySelector(`#result1`).innerHTML=combine1;
     
   document.querySelector(`#blockNone`).style.display="block";
 
