@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Birthday calculator </title>
+
+  <!-- Favicon image (icon for website title) -->
+
+    <link rel="icon" type="image/x-icon" href="./images/coming birthday image.png">
+
+    bilalafridi0020@gmail.com
+    <!--- Css link   -->
+
+<link href="./style.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts link   --->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+           
+    
+    <!--- Main area   --->
+
+<main class="main ">
+       <div id="second main"   >
+
+
+    <!-- Navbar inside box  --->
+
+
+<div class="navbar"> 
+
+  <p>Upcoming Birthday Calculator</p>
+
+
+</div>
+
+               <!---Remaing form area -->
+
+      <form method="post"  onsubmit="main();" >
+        
+<p>Put Your Birth Date </p>
+
+<div class="formoptions">
+
+<select name="months"  id="mainMonths" >
+    <option value="Enter Your Birth Month" selected="selected"  disabled>Enter Your Birth Month</option>
+    <option value="January"  >January</option>
+    <option value="January" >February</option>
+    <option value="January" >March</option>
+    <option value="January" >April</option>
+    <option value="January" >May</option>
+    <option value="January" >June</option>
+    <option value="January" >July</option>
+    <option value="January" >August</option>
+    <option value="January" >September</option>
+    <option value="January" >October</option>
+    <option value="January" >November</option>
+    <option value="January" >December</option>
+</select>
+
+
+<select name="Dates" id="mainDates">
+    <option value="Enter Your Birth Date" selected="selected" disabled>Enter Your Birth Date</option>
+    <option value=" 5" >1</option>
+    <option value="1" >2</option>
+    <option value="2" >3</option>
+    <option value="3" >4</option>
+    <option value="4" >5</option>
+    <option value="6" >6</option>
+    <option value="7" >7</option>
+    <option value="8" >8</option>
+    <option value="9" >9</option>
+    <option value="10" >10</option>
+    <option value="11" >11</option>
+    <option value="12" >12</option>
+    <option value="13" >13</option>
+    <option value="14" >14</option>
+    <option value="15">15</option>
+    <option value="15" >16</option>
+    <option value="17" >17</option>
+    <option value="18" >18</option>
+    <option value="19" >19</option>
+    <option value="20" >20</option>
+    <option value="21" >21</option>
+    <option value="22" >22</option>
+    <option value="23" >23</option>
+    <option value="24" >24</option>
+    <option value="25" >25</option>
+    <option value="26" >26</option>
+    <option value="27" >27</option>
+    <option value="28" >28</option>
+    <option value="29" >29</option>
+    <option value="30" >30</option>
+    <option value="31" >31</option>
+    
+</select>
+</div>
+
+<br/>
+</form>
+
+<button type="button" id="Calculate button"  onclick="bilal(); " >Calculate</button>
+
+<br/> 
+
+           <!---Result area  -->
+
+<div class="results" id="blockNone" >
+
+<p>Remaing Months : </p>
+
+<input type="text"
+ name="res"   id="result1"> <br/>
+
+<p>Remaing Days : </p>
+<input type="text" name="resu"   id="result2"> <br/>
+
+<p>Remaing Hour : </p>
+<input type="text" name="resul"   id="result3">
+
+</div>
+             <!--The end -->
+           
+       </div>
+    </main>
+
+
+
+
+<!-- JAvascript link   --->
+
+<script src="./script.js"></script>
+
+
+    
+</body>
+</html>

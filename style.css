@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #faf6f6;
+}
+
+      
+
+   /*  Navbar 
+ .navbar{
+        background-color: rgb(5, 5, 180);
+      max-width: 100%;
+        height: 120px;
+        position: sticky;
+ }
+
+ .navbar h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+font-size: 2.2rem;
+color: rgb(255, 255, 255);
+text-shadow: 0 0 50px black;
+ }
+
+ @media all and (max-width:604px) {
+    .navbar h1{
+        font-size: 1.8rem;
+    }
+ }
+ @media all and (max-width:502px) {
+    .navbar h1{
+        font-size: 1.5rem;
+    }
+ }
+ 
+ @media all and (max-width:424px) {
+    .navbar h1{
+        font-size: 1.3rem;
+        padding-top: 40px;
+    }
+ }
+ @media all and (max-width:358px) {
+    .navbar h1{
+        font-size: 1rem;
+    }
+ }
+ */
+
+
+       /*  Main area */
+
+
+.main{
+    width: 100%;
+    height:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+div#second\ main{
+        border: 2px solid white;
+    width: 29rem;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 35rem;
+    background: linear-gradient(#efefef,#0f12c2);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+
+
+                  
+                     /*  Actual inside navbar*/
+                     
+ div.navbar{
+    border: 1px solid red;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    color:white;
+    border-radius: 6px;
+    height: 10%;
+    padding-top: 12px;
+    font-size: 20px;
+    }
+@media all and (max-width: 320px) {
+    div.navbar{
+        font-size: 15px;
+    }
+}
+
+
+    /* Form section */
+
+form{
+    margin-top: 35px;
+}    
+
+form p{
+    text-align: center;
+}
+
+
+form div.formoptions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#mainMonths{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 15em;
+    background-color: rgb(187, 182, 182);
+    
+}
+
+#mainDates{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 15em;
+    background-color: rgb(187, 182, 182); 
+}
+
+button#Calculate\ button{
+    text-align: center;
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 15em;
+    background-color: rgb(187, 182, 182); 
+    cursor: pointer;
+}
+
+                 /* REsults area */
+  div.results{
+    display: none;
+} 
+
+.results{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}                 
+div.results p{
+    font-weight: bold;
+}
+
+input#result1{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 20em; /* 30em is best*/
+    background-color: rgb(187, 182, 182); 
+    color: black;
+}
+
+input#result2{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 20em; /* 30em is best*/
+    background-color: rgb(187, 182, 182); 
+    color: black;
+}
+input#result3{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 20em; /* 30em is best*/
+    background-color: rgb(187, 182, 182); 
+    color: black;
+}
+
+
+              /*  Media queries */
+
+@media all and (max-width:412px) {
+    div#second\ main{
+        height:40rem ;
+    }    
+form p{
+    text-align: left;
+    padding-bottom: 12px;
+}    
+form div.formoptions{
+    gap: 20px;
+}
+#mainMonths{
+    width: 100%;
+}
+#mainDates{
+    width: 100%;
+}  
+
+}
+
+            /* For orientation */
+    @media all and (min-height:800px) {
+        div#second\ main{
+            margin-top: 110px;
+        }        
+    }     
+    @media all and (min-height:850px) {
+        div#second\ main{
+            margin-top: 150px;
+        }        
+    }        
+
+    @media all and (min-height:950px) {
+        div#second\ main{
+            margin-top: 180px;
+        }        
+    }     
+    @media all and (min-height:1050px) {
+        div#second\ main{
+            margin-top: 230px;
+        }        
+    }     
+    @media all and (min-height:1100px) {
+        div#second\ main{
+            margin-top: 280px;
+        }        
+    }     
+
+                
+
+
