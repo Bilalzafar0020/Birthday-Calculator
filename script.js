@@ -1,4 +1,5 @@
-   function bilal(){
+ 
+ function bilal(){
 
    let userMonth=document.querySelector(`#mainMonths`).value    
 
@@ -119,6 +120,19 @@ if(date ===1 || date === 0){
 };
 
 
+
+//   (-1 month error)
+
+if(month === -1){
+  month = 11
+}else{
+  month = month
+}
+
+
+
+
+
 //   combine answerr of month  and addingmonths(why we are taking here and not above with it's 
 //    sector   because the month in (-) of date will not reduce the month when date will become -)
 
@@ -141,7 +155,9 @@ document.querySelector(`#result2`).innerHTML=combine2 ;
 
    };
 
+// Repeat myFunction every hour (3600000 milliseconds)
 
+setInterval(bilal,3600000)
 
 
 
@@ -152,7 +168,4 @@ document.querySelector(`#result2`).innerHTML=combine2 ;
 
 
        
-// setTimeout(function()  {
-//     document.getElementById('blockNone').style.display = 'none';
-// }, 3000); // 3000 milliseconds = 3 seconds
 
