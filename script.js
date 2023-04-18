@@ -44,7 +44,7 @@ else if (userMonth=="November"){
 else if (userMonth=="December"){
   userMonth=12
 } else{
-  alert("Please select month")
+  alert("Please select month of birthday")
 };
 
 
@@ -92,6 +92,16 @@ if(month< 0){
 userDate = Number(userDate)
 
 
+
+   //  (for the alert if some one did'nt select dates)
+
+// if(userDate=== [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]){
+//   userDate = userDate
+// }else{
+//   alert("Please select date of birthday")
+// };
+
+
 let currentDate = currentTime.getDate(); 
 currentDate=Number(currentDate)
 
@@ -131,7 +141,32 @@ if(month === -1){
 
 
 
+//  now for hours
 
+
+let currentHour = currentTime.getHours();
+
+
+let hour = 12 - currentHour ;
+
+
+
+///  now for (-) dates
+if(hour <1){
+  hour + 12 ;
+}else{
+  hour = hour
+};
+
+
+
+    //  for hours and hour in result
+let addingHour= "Hours";
+if(hour === 1 || hour=== 0){
+  addingHour= "Hour"
+}else{
+  addingHour= addingHour
+};
 
 //   combine answerr of month  and addingmonths(why we are taking here and not above with it's 
 //    sector   because the month in (-) of date will not reduce the month when date will become -)
@@ -143,6 +178,7 @@ if(month === -1){
 let combine2 = `${date} ${addingDate}`;
 
 
+let combine3 = `${hour} ${addingHour}  ` ;
 
 
   // print the answer
@@ -153,6 +189,7 @@ let combine2 = `${date} ${addingDate}`;
 
 document.querySelector(`#result2`).innerHTML=combine2 ;
 
+document.querySelector(`#result3`).innerHTML=combine3;
    };
 
 // Repeat myFunction every hour (3600000 milliseconds)
