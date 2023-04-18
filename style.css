@@ -113,34 +113,53 @@ button#Calculate\ button{
     justify-content: center;
     
 }                 
-div.results p{
+.result1P{
+margin-bottom: 5px;
+font-weight: bold;
+}
+#result1{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    /* 30em is best*/
+    background-color: rgb(187, 182, 182); 
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.result2P{
+    margin-top: 15px;
     font-weight: bold;
+    }
+#result2{
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 15em;  /* 30em is best*/
+    background-color: rgb(187, 182, 182); 
+    color: black;
+    font-weight: normal;
+    text-align: center;
 }
 
-p#result1{
-    height: 34px;
-    border: 1px solid white;
-    border-radius: 4px;
-    width: 20em; /* 30em is best*/
-    background-color: rgb(187, 182, 182); 
-    color: black;
-}
 
-input#result2{
+.result3P{
+    margin-top: 15px;
+    font-weight: bold;
+    }
+
+
+#result3{
     height: 34px;
     border: 1px solid white;
     border-radius: 4px;
-    width: 20em; /* 30em is best*/
+    width: 15em; /* 30em is best*/
     background-color: rgb(187, 182, 182); 
     color: black;
-}
-input#result3{
-    height: 34px;
-    border: 1px solid white;
-    border-radius: 4px;
-    width: 20em; /* 30em is best*/
-    background-color: rgb(187, 182, 182); 
-    color: black;
+    font-weight: normal;
+    text-align: center;
 }
 
 
