@@ -146,17 +146,25 @@ if(month === -1){
 
 let currentHour = currentTime.getHours();
 
+//  for the correction of 0 in hour method and also accordingly date 
 
-let hour = 12 - currentHour ;
+if(currentHour===0){
+  currentHour=24;
+  date = date -1 ;
+}else{
+  currentHour=currentHour
+}
 
 
+
+let hour = 24 - currentHour ;
 
 ///  now for (-) dates
-if(hour <1){
-  hour + 12 ;
-}else{
-  hour = hour
-};
+// if(hour <1){
+//   hour + 12 ;
+// }else{
+//   hour = hour
+// };
 
 
 
