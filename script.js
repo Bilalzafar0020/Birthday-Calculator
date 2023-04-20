@@ -157,11 +157,11 @@ if(currentHour===0){
 
 
 
-let hour = 24 - currentHour ;
+let hour = 24 - currentHour   ;
 
-///  now for (-) dates
-// if(hour <1){
-//   hour + 12 ;
+// now for (-) dates
+// if(hour < 1){
+//   hour= hour + 12 ;
 // }else{
 //   hour = hour
 // };
@@ -186,7 +186,7 @@ if(hour === 1 || hour=== 0){
 let combine2 = `${date} ${addingDate}`;
 
 
-let combine3 = `${hour} ${addingHour}  ` ;
+let combine3 = `${hour} ${addingHour}` ;
 
 
   // print the answer
